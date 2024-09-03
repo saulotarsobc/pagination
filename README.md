@@ -30,8 +30,8 @@ import React from "react";
 import Pagination from "./Pagination"; // Importa o componente de paginação
 
 const App: React.FC = () => {
-  const totalItems = 100;
-  const itemsPerPage = 10;
+  const total = 100;
+  const pageSize = 10;
 
   const handlePageChange = (page: number) => {
     console.log("Página atual:", page);
@@ -41,8 +41,8 @@ const App: React.FC = () => {
     <div>
       <h1>Exemplo de Paginação</h1>
       <Pagination
-        totalItems={totalItems}
-        itemsPerPage={itemsPerPage}
+        total={total}
+        pageSize={pageSize}
         onPageChange={handlePageChange}
       />
     </div>

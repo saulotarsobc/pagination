@@ -1,19 +1,29 @@
-import { Pagination } from "./components/Pagination";
+import React, { useState } from "react";
+import { PageSizeSelector, Pagination } from "./components/Pagination";
 
 const App: React.FC = () => {
-  const totalItems = 100;
-  const itemsPerPage = 9;
+  const total = 100;
+  const [pageSize, setPageSize] = useState<number>(20); // Estado para pageSize
 
   const handlePageChange = (page: number) => {
     console.log("Página atual:", page);
   };
 
+  const handlePageSizeChange = (size: number) => {
+    setPageSize(size);
+  };
+
   return (
     <div>
       <h1>Exemplo de Paginação</h1>
+      {/* Usa o componente PageSizeSelector */}
+      <PageSizeSelector
+        pageSize={pageSize}
+        onPageSizeChange={handlePageSizeChange}
+      />
       <Pagination
-        totalItems={totalItems}
-        itemsPerPage={itemsPerPage}
+        total={total}
+        pageSize={pageSize}
         onPageChange={handlePageChange}
       />
     </div>
