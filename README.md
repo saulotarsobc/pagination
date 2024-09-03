@@ -11,10 +11,6 @@ Este é um componente genérico de paginação em React com TypeScript, criado p
 - Mostra as páginas imediatamente antes e depois da página atual.
 - Configurável com o total de itens e itens por página.
 
-## Demonstração
-
-![Demonstração do Componente de Paginação](https://saulotarsobc.github.io/pagination/)
-
 ## Uso
 
 ### Instalação

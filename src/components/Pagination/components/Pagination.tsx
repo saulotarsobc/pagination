@@ -1,13 +1,12 @@
 import { FC, useState } from "react";
-import LeftArrowIcon from "./LeftArrowIcon";
-import RightArrowIcon from "./RightArrowIcon";
+import { PaginationProps } from "../interfaces";
 import {
-  buttonStyle,
   activeButtonStyle,
+  buttonStyle,
   disabledButtonStyle,
   dotsStyle,
 } from "../styles";
-import { PaginationProps } from "../interfaces";
+import { LeftArrowIcon, RightArrowIcon } from "./icons";
 
 const Pagination: FC<PaginationProps> = ({ total, pageSize, onPageChange }) => {
   // Calcula o número total de páginas
