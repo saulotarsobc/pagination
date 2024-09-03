@@ -13,7 +13,7 @@ Este é um componente genérico de paginação em React com TypeScript, criado p
 
 ## Demonstração
 
-![Demonstração do Componente de Paginação](link-para-gif-ou-imagem-de-exemplo)
+![Demonstração do Componente de Paginação](https://saulotarsobc.github.io/pagination/)
 
 ## Uso
 
